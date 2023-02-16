@@ -9,4 +9,4 @@ namespace: nodejs
 images:
 - name: aks-k8s-rollouts
   newName: avik6028/aks-k8s-rollouts
-  newTag: 9ef3b5488e83158369beadce054209dca627ebf8
+  newTag: 7467334ef6408bfecd9465279775be6e5ba19042
