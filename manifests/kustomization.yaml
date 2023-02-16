@@ -1,6 +1,13 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+resources:
+  - rollout.yaml
+  - service-active.yaml
+  - service-preview.yaml
+  - namespace.yaml
+namespace: nodejs
 images:
-- name: aks-k8s-rollouts
-  newName: avik6028/aks-k8s-rollouts
-  newTag: b3d98a413a5e220751205e327edeca010808df2a
+  - name: aks-k8s-rollouts
+    newName: aks-k8s-rollouts
+    newTag: v1
+
